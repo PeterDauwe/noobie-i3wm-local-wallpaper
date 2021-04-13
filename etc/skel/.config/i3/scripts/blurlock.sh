@@ -1,6 +1,6 @@
 #!/bin/sh
 #Find all your wallpapers
-DIR="$Home/.backgrounds/*"
+DIR="$Home/.backgrounds/"
 
 #Select wallpaper at random
 SCREEN=$(ls $DIR/*.jpg | shuf -n1)
