@@ -382,7 +382,7 @@ assign [class="Spotify|spotify|discord|Discord"]                                
 # USER APPLICATIONS TO START AT BOOT
 
 # ArcoLinux Welcome App
-exec --no-startup-id dex $HOME/.config/autostart/arcobobo-welcome.desktop
+exec --no-startup-id dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 
 # Autotiling
 exec_always --no-startup-id autotiling
@@ -471,7 +471,7 @@ exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd &
 #not workspace related
 
 #ArcoLinux Welcome App
-bindsym control+mod1+w exec --no-startup-id arcobobo-welcome
+bindsym control+mod1+w exec --no-startup-id arcolinux-welcome-app
 
 #ArcoLinux Tweak Tool
 bindsym control+mod1+e exec --no-startup-id arcolinux-tweak-tool
@@ -616,9 +616,9 @@ bindsym Control+mod1+c exec wal -i "$HOME/.backgrounds" && ~/.config/i3/scripts/
 
 #floating enabled from some programs - find with xprop
 
-for_window [class="main.py"] floating enable
+for_window [class="Arcolinux-welcome-app.py"] floating enable
 #for_window [class="Arcolinux-tweak-tool.py"] floating enable
-#for_window [class="Arcolinux-calamares-tool.py"] floating enable
+for_window [class="Arcolinux-calamares-tool.py"] floating enable
 for_window [class="Bleachbit"] floating disable
 for_window [class="Blueberry.py"] floating enable
 for_window [class="Brasero"] floating disable
